@@ -46,7 +46,12 @@ pyautogui.typewrite('psycho killer')
 musica = (pyautogui.locateCenterOnScreen('proj2aula17/musica.png'))
 sleep(2)
 pyautogui.click(musica[0],musica[1],duration=2)
-sleep(1)
+sleep(3)
 
 # 6 Rolar 400 pixels para baixo e apertar uma tecla para começar
+pyautogui.scroll(-400)
+sleep(4)
+pyautogui.hotkey('a')
+
+
 # 7 Se verificar quando será necessário apertar os botões a,s,j,k,l
