@@ -55,3 +55,13 @@ pyautogui.hotkey('a')
 
 
 # 7 Se verificar quando será necessário apertar os botões a,s,j,k,l
+while keyboard.is_pressed('1') == False:
+    if pyautogui.pixelMatchesColor(1313,879,(255,255,255)):
+        pyautogui.press('a')
+        sleep(0.01)
+    elif pyautogui.pixelMatchesColor(1430,839,(255,255,255)):
+        pyautogui.press('s')
+        sleep(0.01)
+    elif pyautogui.pixelMatchesColor(1540,841,(255,255,255)):
+        pyautogui.press('d')
+        sleep(0.01)
