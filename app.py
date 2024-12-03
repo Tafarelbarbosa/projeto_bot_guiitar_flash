@@ -2,6 +2,7 @@ import pyautogui
 from time import sleep
 import pyperclip
 import webbrowser
+import keyboard
 
 def mover_janela_direita():
     pyautogui.keyDown('win')
@@ -12,18 +13,6 @@ def mover_janela_direita():
     sleep(1)
     pyautogui.keyUp('win')   
     
-'''def mover_janela_cima():
-    pyautogui.keyDown('win')
-    sleep(1)
-    pyautogui.keyDown('up')
-    sleep(1)
-    pyautogui.keyUp('up')
-    sleep(1)
-    pyautogui.keyDown('up')
-    sleep(1)
-    pyautogui.keyUp('up')
-    sleep(1)
-    pyautogui.keyUp('win')'''
 
 # # 1 Abrir a página https://guitarflash.com
 webbrowser.open_new_tab('https://guitarflash.com')
@@ -48,13 +37,14 @@ sleep(2)
 pyautogui.click(musica[0],musica[1],duration=2)
 sleep(3)
 
-# 6 Rolar 400 pixels para baixo e apertar uma tecla para começar
+# 4 Rolar 400 pixels para baixo e apertar uma tecla para começar
+pyautogui.click(1040,285,duration=1)
 pyautogui.scroll(-400)
 sleep(4)
-pyautogui.hotkey('a')
+pyautogui.hotkey('0')
 
 
-# 7 Se verificar quando será necessário apertar os botões a,s,j,k,l
+# 5 Se verificar quando será necessário apertar os botões a,s,j,k,l
 while keyboard.is_pressed('1') == False:
     if pyautogui.pixelMatchesColor(1313,879,(255,255,255)):
         pyautogui.press('a')
