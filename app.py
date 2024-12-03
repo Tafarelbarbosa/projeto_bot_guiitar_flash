@@ -28,13 +28,13 @@ pyautogui.move(0,62,duration=1)
 pyautogui.click()
 
 # 3 Escolher a música e clicar na música
+
 sleep(2)
 pyautogui.hotkey('ctrl','f')
 sleep(1)
-pyautogui.typewrite('psycho killer')
-musica = (pyautogui.locateCenterOnScreen('proj2aula17/musica.png'))
+pyautogui.typewrite('Falling In Reverse')
 sleep(2)
-pyautogui.click(musica[0],musica[1],duration=2)
+pyautogui.click(1277,770,duration=3)
 sleep(3)
 
 # 4 Rolar 400 pixels para baixo e apertar uma tecla para começar
